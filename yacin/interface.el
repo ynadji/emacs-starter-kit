@@ -8,7 +8,7 @@
 
 ;;; highlight-parens
 (require 'highlight-parentheses)
-(highlight-parentheses-mode)
+(highlight-parentheses-mode 1)
 
 ;;; syntax highlighting
 (global-font-lock-mode t)
