@@ -5,6 +5,10 @@
 (setq swank-clojure-classpath (mapcar (lambda (p) (expand-file-name p)) (split-string (getenv "CLASSPATH") ":")))
 (setq swank-clojure-extra-vm-args (list "-server" "-Xmx1024m"))
 
+; fuzzzzzy
+(define-key lisp-mode-map (kbd "TAB")
+            'slime-fuzzy-indent-and-complete-symbol)
+
 (defun clojure-add-classpath (path)
  "Add a classpath to Clojure and refresh slime-lisp-implementations"
  (interactive "GPath: ")
